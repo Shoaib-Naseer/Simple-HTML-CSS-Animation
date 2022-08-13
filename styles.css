@@ -1,0 +1,71 @@
+
+*{
+    margin: 0;
+    padding: 0s;
+}
+body{
+    background-color: #12475f;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.header{
+    height: 300px;
+}
+ h1{
+    font-size: 50px;
+    position: relative;
+    animation: header;
+    animation-duration: 3s ;
+    animation-fill-mode: forwards;
+}
+@keyframes header {
+    0% {top: -10px;}
+    100%{top:220px}  
+}
+
+a{
+    color: white;
+    text-decoration: none
+}
+
+.content{
+    padding:0 30px;
+    margin: auto;
+}
+
+p{
+    position: relative;
+    animation: paragraph;
+    animation-duration: 3s ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes paragraph{
+    0% {left: -900px;}
+    100%{left:0}  
+}
+
+.btn{
+    margin-top: 15px;
+    display: inline-block;
+    border: 1px solid white;
+    padding: 1rem 1rem;
+    opacity: 0;
+    animation:button;
+    animation-delay: 3s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    transition: transform;
+    transition-duration: 1s;
+}
+
+.btn:hover {
+    transform: rotateY(180deg);
+  }
+@keyframes button {
+    0% {opacity: -1;}
+    100%{opacity: 1;}
+    
+}
